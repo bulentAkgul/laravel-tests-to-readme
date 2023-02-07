@@ -1,0 +1,28 @@
+{
+  "name": "bakgul/laravel-tests-to-readme",
+  "description": "A package to output test methods to readme files as a documantation.",
+  "authors": [
+    {
+      "name": "Bulent Akgul",
+      "email": "bulent.akgul@me.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "Bakgul\\LaravelTestsToReadme\\": "src/",
+      "Bakgul\\LaravelTestsToReadme\\Tests\\": "tests/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {}
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Bakgul\\LaravelTestsToReadme\\ToReadmeServiceProvider"
+      ]
+    }
+  }
+}
