@@ -2,24 +2,22 @@
 
 namespace Bakgul\LaravelTestsToReadme\Tests;
 
+use Bakgul\LaravelDumpServer\Concerns\HasDumper;
 use Tests\TestCase as BaseTestCase;
 
 abstract class TestCase extends BaseTestCase
 {
+    use HasDumper;
+
     public function setUp(): void
     {
         parent::setUp();
 
-        $this->clearRay();
+        $this->resetDumper();
     }
 
     public function tearDown(): void
     {
         parent::tearDown();
-    }
-
-    protected function clearRay()
-    {
-        if (class_exists(\Spatie\LaravelRay\Ray::class)) ray()->clearAll();
     }
 }
