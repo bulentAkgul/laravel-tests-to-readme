@@ -3,8 +3,6 @@
 namespace Bakgul\LaravelTestsToReadme\Tasks;
 
 use Bakgul\LaravelHelpers\Helpers\Str;
-use Closure;
-use ReflectionFunction;
 
 class PrintVariable
 {
