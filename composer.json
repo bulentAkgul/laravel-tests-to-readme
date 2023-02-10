@@ -8,7 +8,6 @@
     }
   ],
   "require": {
-    "bakgul/laravel-dump-server": "^1.0.0",
     "bakgul/laravel-helpers": "^1.0.0"
   },
   "require-dev": {},
