@@ -141,4 +141,4 @@ There are other inconsistency checks, too. You can find them in `to-readme.php`
 
 ## License
 
-It is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
