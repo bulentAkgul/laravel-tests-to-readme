@@ -6,9 +6,9 @@ use Bakgul\LaravelTestsToReadme\Tests\TestTasks\InteractWithFile;
 
 trait HasInteraction
 {
-    private InteractWithFile $file;
+    protected InteractWithFile $file;
 
-    private function file(array|string $scenario = '', string $job = 'in', string $class = ''): void
+    protected function file(array|string $scenario = '', string $job = 'in', string $class = ''): void
     {
         $this->file = (new InteractWithFile([
             'class' => $class ?: 'TestClass' . rand(0, 10000),

@@ -14,9 +14,9 @@ class ReadmeContentServiceTest extends TestCase
     const PATH = __DIR__ . '/../../TestFiles/TestClass.php';
 
     /** @test */
-    public function itit_will_generate_bare_minimum_readme_structure(): void
+    public function init_will_generate_bare_minimum_readme_structure(): void
     {
-        $this->file('', '', 'TestCalls');
+        $this->file('', '', 'TestClass');
 
         $this->file->makeReadmeDir();
 
@@ -31,7 +31,7 @@ class ReadmeContentServiceTest extends TestCase
     /** @test */
     public function read_will_read_the_readme_file_content(): void
     {
-        $this->file('', '', 'TestCalls');
+        $this->file('', '', 'TestClass');
 
         $this->file->copyReadme();
 
@@ -100,7 +100,7 @@ class ReadmeContentServiceTest extends TestCase
     /** @test */
     public function write_will_put_readme_content_to_the_target_file(): void
     {
-        $this->file('', '', 'TestCalls');
+        $this->file('', '', 'TestClass');
 
         $this->file->makeReadmeDir();
 
