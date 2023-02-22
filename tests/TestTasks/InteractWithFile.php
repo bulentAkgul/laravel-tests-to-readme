@@ -2,10 +2,9 @@
 
 namespace Bakgul\LaravelTestsToReadme\Tests\TestTasks;
 
-use Bakgul\LaravelHelpers\Helpers\Folder;
+use Bakgul\LaravelHelpers\Helpers\File;
 use Bakgul\LaravelHelpers\Helpers\Path;
 use Bakgul\LaravelHelpers\Helpers\Str;
-use Illuminate\Support\Facades\File;
 
 class InteractWithFile
 {
@@ -28,7 +27,7 @@ class InteractWithFile
 
     public function create(string $path, string $file): void
     {
-        if ($this->isCreatable()) Folder::add($path, $file, $this->content());
+        if ($this->isCreatable()) File::create($path, $file, $this->content());
     }
 
     private function isCreatable(): bool
